@@ -23,7 +23,7 @@ class Solution {
 
         MaxHeap heap = new MaxHeap(counter.entrySet());
 
-        int interationsAmount = 0;
+        int iterationsAmount = 0;
 
         while (heap.getSize() > 0) {
             Iterator<Entry<Character, Integer>> it = banCounter.entrySet().iterator();
@@ -55,12 +55,12 @@ class Solution {
                 }
             }
 
-            interationsAmount++;
+            iterationsAmount++;
 
             toReturnBack.forEach(heap::insert);
         }
 
-        return interationsAmount;
+        return iterationsAmount;
     }
 
     public static void main(String[] args) {
